@@ -1,0 +1,141 @@
+body
+{
+	font-family: 'Raleway', sans-serif;
+}
+
+
+#logo
+{
+	width: 20px;
+	height: 30px;
+}
+#conteneur
+{
+	display: flex;
+}
+
+#map
+{
+   width: 13px;
+   height: 13px;  
+}
+#money
+{
+	width: 13px;
+	height:13px;
+}
+#child
+{
+	width: 13px;
+	height: 13px;
+}
+#heart
+{
+	width: 13px;
+	height:13px;
+}
+#dog
+{
+	width: 13px;
+	height: 13px;
+}
+#info
+{
+	width: 13px;
+	height:13px;
+}
+#lacannebiere
+{
+	width: 140px;
+	height: 70px;
+}
+#hotelduport
+{
+width: 140px;
+height: 70px;
+}
+#hotellesmouettes
+{
+	width: 140px;
+	height: 70px;
+}
+#hoteldelamer
+{
+	width: 140px;
+	height:70px;
+}
+#aubergelepanier
+{
+	width: 140px;
+	height: 70px;
+}
+#hotelchezamina
+{
+	width: 140px;
+	height: 70px;
+}
+#hotellesoleildumatin
+{
+	width: 140px;
+	height: 70px;
+}
+#aucoeurdeleau
+{
+	width: 140px;
+	height: 70px;
+}
+#toutbleutoutblanc
+{
+	width: 140px;
+	height:70PX;
+}
+#vieuxport
+{
+	width: 180px;
+	height: 340px; 
+}
+#fortdepomegues
+{
+	width: 170px;
+	height:90px;
+}
+#ilesdufrioul
+{
+	width: 170px;
+	height:90px;
+}
+#parcnationaldescalanques
+{
+	width: 180px;
+	height: 340px;
+}
+#notredamedelagarde
+{
+	width: 140px;
+	height: 70px;
+}
+#parclongchamp
+{
+	width: 140px;
+	height: 70px;
+}
+#bloc_page
+{
+	width: 900px;
+	margin: auto;
+}
+/*navigation*/
+nav ul
+{
+	list-style-type: none;
+	display: flex;
+}
+nav li
+{
+	margin-left: 200px
+}
+footer h4
+{
+font-weight: bold;
+}
+
