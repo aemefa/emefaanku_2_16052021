@@ -1,60 +1,375 @@
-body
+*{
+
+	box-sizing: border-box;
+}
+body,html
 {
-	font-family: 'Raleway', sans-serif;
+font-family: 'Raleway', sans-serif;
+padding: 0;
+margin: 0;
+}
+#bloc_page
+{
+	max-width: 1400px;
+	margin: 0 auto;
+	padding:0px 15px 0px 15px;
+
 }
 
+nav
+{
+position:absolute;
+padding-right:15px;
+right:0;
+top: -15px;
+}
+nav ul li
+{
+list-style:none;
+display:inline-block;
+margin-left:40px;
+height:100px;
+padding-top:15px;
+padding-left:10px;
+padding-right:10px;
+}
+nav ul li:hover{
+
+	border-top:2px solid #0065fc;
+}
+nav ul li a
+{
+
+text-decoration:none;
+color:#000000;
+}
+nav ul li a:hover{
+	color:#0065FC;
+}
+nav ul li .inscription{
+
+	 color:#0065FC;
+
+}
 
 #logo
 {
-	width: 100px;
-	height: 80px;
+	width: 70px;
+	height: 45px;
 }
-#conteneur
-{
-	display: flex;
-}
-
 #map
 {
    width: 13px;
    height: 13px;  
+    
 }
-#money
-{
-	width: 13px;
-	height:13px;
+#bloc_recherche span:first-child{
+  
+    padding:10px;
+    padding-left:15px;
+    padding-top:9px;
+    background:#eeeeee;
+    height:40px;
+    border-radius:10px 0 0 10px;
+  
 }
-#child
-{
-	width: 13px;
-	height: 13px;
+
+#bloc_recherche span:first-child svg{
+    
+    width:16px;
+    height:16px;
+  
 }
-#heart
-{
-	width: 13px;
-	height:13px;
+#bloc_recherche input{
+  
+    height:40px;
+    padding-left:15px;
+    outline:none;
+    border:1px solid #eeeeee;
+  
 }
-#dog
+#bloc_recherche span:last-child{
+  
+     color:#ffffff;
+     background:#0065FC;
+     height:40px;
+     padding:10px;
+	 padding-top:8px;
+	 padding-bottom:11px;
+     border-radius:0 10px 10px 0;
+}
+#filtres{
+ 
+	 display:flex;
+	 flex-wrap: wrap;
+	 gap:15px;
+
+}
+.filtre
 {
-	width: 13px;
-	height: 13px;
+  	padding:0px 15px 10px 0px;
+    border:1px solid #eeeeee;
+    display:inline-block;
+    border-radius:16px;
+    height:31px;
+
+  
+}
+
+.filtre span:first-child
+{
+     height:29px;
+     width:29px;
+	 background: #DEEBFF;
+     border-radius:16px;
+     position:relative; 
+}
+.filtre span
+{
+    display:inline-block;
+}
+
+/* Ce procede est le meme quand on a une image */
+.filtre span:first-child img{
+    width:15px;
+    height:15px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate3d(-8px, -8px, 0);
+  
+}
+
+.filtre span:last-child{ 
+   margin-left:7px;
+   transform:translate3d(0,5px,0);
+   vertical-align:top;
+  
+}
+.filtre:hover{
+  
+    background:blue;
+    color:#ffffff;
 }
 #info
 {
 	width: 13px;
 	height:13px;
 }
-#lacannebiere
+.blue-icon path{
+    
+   fill:#0065FC;
+ 
+}
+.grey-icon path{
+ 
+   fill:#F2F2F2;
+}
+
+#wrapper-all-lodgings
+{
+   
+   display:flex;
+   gap:30px;
+ 
+}
+#wrapper-area
+{
+ 
+    padding:10px 30px 10px 30px;
+    width:70%; /*Pas utile pour toi tu devras trouver tes propres dimentions */
+    background:#F2F2F2;
+    margin-top:30px; /* Pas utile pour toi tu devras trouver tes propres dimensions */
+    border-radius:15px;
+    
+}
+#wrapper-area #flex-area
+{
+   display:flex;
+   flex-wrap:wrap;
+   gap:30px; /* Utile pour toi 
+   
+   https://coryrylan.com/blog/css-gap-space-with-flexbox
+
+*/
+}
+#flex-area a
+{
+   text-decoration:none;
+   color:#000000;
+   display:block;
+   width: calc((100% / 3) - 20px);
+   height:200px;
+   background:#ffffff;
+   padding:3px;
+   border-radius:10px;
+   box-shadow: 1px 0px 3px 0px rgba(158,158,158,1);
+/*     Link to generate the box-shadow: https://www.cssmatic.com/box-shadow */
+}
+#flex-area a img
+{
+   object-fit:cover;
+   width:100%;
+   height: 60%;
+   border-radius:10px 10px 0 0;
+ 
+}
+#flex-area a *:not(img)
+{
+ 
+   margin-left:10px;
+   display:inline-block;
+   width:100%;
+   margin-top:5px;
+ 
+}
+#flex-area a span:first-of-type
+{
+  
+    font-weight:bold;
+    font-size:1rem;
+ 
+}
+#flex-area a span:nth-of-type(2)
+{
+   font-size:0.9rem;
+ 
+}
+
+#flex-area a div:first-of-type svg
+{
+    width:14px;
+    height:14px;
+    margin:0;
+ 
+}
+
+/* Zone les plus populaires */
+#wrapper-most-popular{
+    margin-top:30px; /* Pas utile pour toi tu devras trouver tes propres dimensions */
+    width:40%; /* Pas utile pour toi tu devras trouver tes propres dimensions; */
+    background:#F2F2F2;
+    border-radius:15px;
+    padding:10px 30px 10px 30px;
+    position:relative;
+ 
+}
+#wrapper-most-popular h3{
+   
+   display:inline-block;
+ 
+}
+#wrapper-most-popular .right-icon{
+    
+    width:20px;
+    height:20px;
+    vertical-align:middle;
+    position:absolute;
+    top:30px;
+    right:30px;
+}
+
+#most-populars-flex{
+ 
+   display:flex;
+   flex-direction:column;
+   gap:30px;
+ 
+}
+#most-populars-flex a{
+   text-decoration:none;
+   color:#000000;
+   display:block;
+   width: 100%;
+   height:140px;
+   background:#ffffff;
+   padding:3px;
+   border-radius:10px;
+   box-shadow: 1px 0px 3px 0px rgba(158,158,158,1);
+/*     Link to generate the box-shadow: https://www.cssmatic.com/box-shadow */
+ 
+   display:flex;
+}
+#most-populars-flex a img:first-child{
+   
+   width:40%;
+   border-radius:10px 0 0 10px;
+   object-fit:cover;
+ 
+}
+#most-populars-flex a div:first-of-type{
+ 
+    width:60%;
+    padding:15px;
+    position:relative;
+ 
+}
+
+#most-populars-flex a div:first-of-type *{
+ 
+    display:inline-block;
+    width:100%;
+ 
+}
+#most-populars-flex a div:first-of-type span:first-child{
+  
+    font-weight:bold;
+    font-size:1rem;
+ 
+}
+#most-populars-flex a div:first-of-type span:nth-child(2){
+   font-size:0.9rem;
+   margin-top:10px;
+ 
+}
+
+#most-populars-flex a div:first-of-type div:last-child{
+   
+   position:absolute;
+   bottom:5px;
+   left:0;
+   padding-bottom:0;
+ 
+}
+#most-populars-flex a div:first-of-type div:last-child svg{
+    width:14px;
+    height:14px;
+    margin:0;
+ 
+}
+
+
+
+/* #activites
+{
+	flex-direction: row;
+	display: flex;
+    justify-content: space-between;
+	display: grid
+ 
+
+}
+.activitescard
+{
+
+		box-shadow: 0 0 20px #0000002e;
+		border-radius: 1rem;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		transition-duration: 0.1s;
+}
+#cannebiere
 {
 	width: 140px;
 	height: 70px;
 }
 #hotelduport
 {
-width: 140px;
-height: 70px;
+	width: 140px;
+	height: 70px;
 }
-#hotellesmouettes
+#hoteldesmouettes
 {
 	width: 140px;
 	height: 70px;
@@ -62,9 +377,9 @@ height: 70px;
 #hoteldelamer
 {
 	width: 140px;
-	height:70px;
+	height: 70px;
 }
-#aubergelepanier
+#Aubergelepanier
 {
 	width: 140px;
 	height: 70px;
@@ -74,68 +389,15 @@ height: 70px;
 	width: 140px;
 	height: 70px;
 }
-#hotellesoleildumatin
+#footer
 {
-	width: 140px;
-	height: 70px;
-}
-#aucoeurdeleau
-{
-	width: 140px;
-	height: 70px;
-}
-#toutbleutoutblanc
-{
-	width: 140px;
-	height:70PX;
-}
-#vieuxport
-{
-	width: 180px;
-	height: 340px; 
-}
-#fortdepomegues
-{
-	width: 170px;
-	height:90px;
-}
-#ilesdufrioul
-{
-	width: 170px;
-	height:90px;
-}
-#parcnationaldescalanques
-{
-	width: 180px;
-	height: 340px;
-}
-#notredamedelagarde
-{
-	width: 140px;
-	height: 70px;
-}
-#parclongchamp
-{
-	width: 140px;
-	height: 70px;
-}
-#bloc_page
-{
-	width: 900px;
-	margin: auto;
-}
-/*navigation*/
-nav ul
-{
-	list-style-type: none;
 	display: flex;
+    justify-content: space-around;
+    height: 350px;
+	background-color: #f2f2f2;
 }
-nav li
-{
-	margin-left: 200px
-}
+
 footer h4
 {
 font-weight: bold;
-}
-
+} */
