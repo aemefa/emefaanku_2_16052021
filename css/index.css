@@ -10,11 +10,13 @@ margin: 0;
 }
 #bloc_page
 {
-	max-width: 1400px;
+	max-width: 1200px;
 	margin: 0 auto;
-	padding:0px 15px 0px 15px;
+    padding:0px 30px 0px 30px;
+    position:relative;
 
 }
+
 
 nav
 {
@@ -337,67 +339,261 @@ nav ul li .inscription{
     margin:0;
  
 }
+#marseille-activities{
+    margin-top:50px;
+  
+}
+#marseille-activities-flex{
+     
+    display:flex;
+    gap:30px;
+  
+}
+#marseille-activities-flex .marseille-activities-flex-child {
+    border-radius:15px;
+    width:calc(100% / 4);
+    height:350px;
+    text-decoration:none;
+    color:#000000;
+  
+}
+
+.marseille-activities-flex-child:first-child, .marseille-activities-flex-child:nth-child(3), .marseille-activities-flex-child:nth-child(2) a:first-child, .marseille-activities-flex-child:nth-child(2) a:last-child, .marseille-activities-flex-child:last-child a  {
+    box-shadow: 1px 0px 3px 0px rgba(158,158,158,1);
+    
+}
+
+.marseille-activities-flex-child img{
+   
+    width:100%;
+    height:86%;
+    border-radius:15px 15px 0 0;
+    object-fit:cover;
+    display:block;
+  
+}
+.marseille-activities-flex-child p{
+  
+    font-weight:bold;
+    margin-left:15px;
+    display:inline-block;
+  
+}
+
+.marseille-activities-flex-child:nth-child(2), .marseille-activities-flex-child:last-child{
+  
+     display:flex;
+     flex-direction:column;
+     gap:30px;
+  
+}
+
+.marseille-activities-flex-child a{
+  
+     text-decoration:none;
+    color:#000000;
+  
+}
+
+.marseille-activities-flex-child:nth-child(2) a, .marseille-activities-flex-child:last-child a{
+  
+    border-radius:15px;
+  
+}
+
+.marseille-activities-flex-child a:first-child{
+  
+    height:51.5%;
+  
+}
 
 
 
-/* #activites
+.marseille-activities-flex-child a:first-child img{
+  
+     height:75% !important;
+     
+}
+
+.marseille-activities-flex-child a:last-child img{
+  
+    height:65% !important;
+  
+}
+
+.marseille-activities-flex-child:nth-child(2) a:last-child{
+    height:40%;
+  
+}
+
+.marseille-activities-flex-child:last-child a:first-child{
+  
+     height:45%;
+  
+}
+.marseille-activities-flex-child:last-child a:last-child{
+  
+    height:calc(55% - 30px);
+  
+}
+.marseille-activities-flex-child:last-child a:first-child img{
+
+   height:70% !important;
+    
+  
+}
+.marseille-activities-flex-child:last-child a:last-child img{
+
+   height:70% !important;
+    
+  
+}
+#marseille-activities{
+    margin-top:50px;
+  
+}
+#marseille-activities-flex{
+     
+    display:flex;
+    gap:30px;
+  
+}
+#marseille-activities-flex .marseille-activities-flex-child {
+    border-radius:15px;
+    width:calc(100% / 4);
+    height:350px;
+    text-decoration:none;
+    color:#000000;
+  
+}
+
+.marseille-activities-flex-child:first-child, .marseille-activities-flex-child:nth-child(3), .marseille-activities-flex-child:nth-child(2) a:first-child, .marseille-activities-flex-child:nth-child(2) a:last-child, .marseille-activities-flex-child:last-child a  {
+    box-shadow: 1px 0px 3px 0px rgba(158,158,158,1);
+    
+}
+
+.marseille-activities-flex-child img{
+   
+    width:100%;
+    height:86%;
+    border-radius:15px 15px 0 0;
+    object-fit:cover;
+    display:block;
+  
+}
+.marseille-activities-flex-child p{
+  
+    font-weight:bold;
+    margin-left:15px;
+    display:inline-block;
+  
+}
+
+.marseille-activities-flex-child:nth-child(2), .marseille-activities-flex-child:last-child{
+  
+     display:flex;
+     flex-direction:column;
+     gap:30px;
+  
+}
+
+.marseille-activities-flex-child a{
+  
+     text-decoration:none;
+    color:#000000;
+  
+}
+
+.marseille-activities-flex-child:nth-child(2) a, .marseille-activities-flex-child:last-child a{
+  
+    border-radius:15px;
+  
+}
+
+.marseille-activities-flex-child a:first-child{
+  
+    height:51.5%;
+  
+}
+
+
+
+.marseille-activities-flex-child a:first-child img{
+  
+     height:75% !important;
+     
+}
+
+.marseille-activities-flex-child a:last-child img{
+  
+    height:65% !important;
+  
+}
+
+.marseille-activities-flex-child:nth-child(2) a:last-child{
+    height:40%;
+  
+}
+
+.marseille-activities-flex-child:last-child a:first-child{
+  
+     height:45%;
+  
+}
+.marseille-activities-flex-child:last-child a:last-child{
+  
+    height:calc(55% - 30px);
+  
+}
+.marseille-activities-flex-child:last-child a:first-child img{
+
+   height:70% !important;
+    
+  
+}
+.marseille-activities-flex-child:last-child a:last-child img{
+
+   height:70% !important;
+    
+  
+}
+
+
+footer 
 {
-	flex-direction: row;
-	display: flex;
-    justify-content: space-between;
-	display: grid
+    gap:15%;
+
+	margin-top: 40px;
+   
+    display: flex;
+    
+    width:100%;
+    
+	background-color: #f2f2f2; 
+    
+    position:absolute;
+
+    left:0;
+
+    padding:30px;
+
+    padding-left:40px;
  
+}
+footer ul 
+{
+list-style: none;
+margin: 0; 
+padding: 0;
+}
+footer ul li
+{
+    margin-top: 10px;
 
 }
-.activitescard
+footer ul li a
 {
-
-		box-shadow: 0 0 20px #0000002e;
-		border-radius: 1rem;
-		overflow: hidden;
-		display: flex;
-		flex-direction: column;
-		transition-duration: 0.1s;
+text-decoration: none;
+color: black;
+font-size: 0.85rem;
 }
-#cannebiere
-{
-	width: 140px;
-	height: 70px;
-}
-#hotelduport
-{
-	width: 140px;
-	height: 70px;
-}
-#hoteldesmouettes
-{
-	width: 140px;
-	height: 70px;
-}
-#hoteldelamer
-{
-	width: 140px;
-	height: 70px;
-}
-#Aubergelepanier
-{
-	width: 140px;
-	height: 70px;
-}
-#hotelchezamina
-{
-	width: 140px;
-	height: 70px;
-}
-#footer
-{
-	display: flex;
-    justify-content: space-around;
-    height: 350px;
-	background-color: #f2f2f2;
-}
-
-footer h4
-{
-font-weight: bold;
-} */

@@ -1,0 +1,53 @@
+@media screen and (max-width: 767px)
+{
+    #filtres{
+ 
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap:15px;
+   
+   }
+   #wrapper-all-lodgings
+   {
+flex-direction: column;
+   }
+    
+footer 
+{
+    gap:15%;
+
+	margin-top: 40px;
+   
+    display: flex;
+    
+    width:100%;
+    
+	background-color: #f2f2f2; 
+    
+    position: initial;
+
+    left:0;
+
+    padding:30px;
+
+    padding-left:40px;
+ 
+}
+footer ul 
+{
+margin: 0; 
+padding: 0;
+}
+footer ul li
+{
+    margin-top: 10px;
+
+}
+footer ul li a
+{
+text-decoration: none;
+color: black;
+font-size: 0.85rem;
+}
+}
