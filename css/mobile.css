@@ -1,18 +1,81 @@
-@media screen and (max-width: 767px)
+@media screen and (max-width: 667px)
 {
+    #logo
+{
+	width: 90px;
+	height: 50px;
+    color: blue;
+}
+nav ul li .inscription
+{
+    position: top;
+    color:#0065FC;
+
+
+
+}
+#marseille-activities-flex
+{
+flex-direction: column;
+}
+#bloc_page
+   {
+margin-left: 10px;
+font-size: 20px;
+float: left;
+flex-direction: column;
+   }
+   
+   
+   
     #filtres{
  
-        display:flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        gap:15px;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap:15px;
    
    }
+
+   #flex-area a
+{
+   text-decoration:none;
+   color:#000000;
+   /* display:block; */
+   /* width: calc((100% / 3) - 20px); */
+   width: 400px;
+   height:200px;
+   background:#ffffff;
+   padding:3px;
+   border-radius:10px;
+   box-shadow:white;
+
+   }
+   
+
    #wrapper-all-lodgings
    {
 flex-direction: column;
    }
-    
+   #flex-area
+   {
+flex-direction: column;
+   }
+   #wrapper-most-popular
+   {
+width: 400px;
+height: 150px;
+background:#F2F2F2;
+padding:10px 30px 10px 30px;
+position:relative;
+   }
+   #marseille-activities-flex
+   {
+flex-direction: column;
+   }
+   #marseille-activities{
+       
+   }
 footer 
 {
     gap:15%;
@@ -20,6 +83,7 @@ footer
 	margin-top: 40px;
    
     display: flex;
+    flex-direction: column;
     
     width:100%;
     
